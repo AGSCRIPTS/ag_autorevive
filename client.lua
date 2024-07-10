@@ -58,7 +58,7 @@ AddEventHandler('notifyEMSAvailability', function(isAvailable)
             car = true,
         },
     })
-    ExecuteCommand('revive')
+    TriggerEvent('hospital:client:Revive')
 end)
 
 AddEventHandler('baseevents:onPlayerDied', function()
